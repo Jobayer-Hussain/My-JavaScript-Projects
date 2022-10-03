@@ -1,0 +1,94 @@
+/*This style.css file is created by Jobayer Rizvi*/
+
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Secular One', sans-serif;
+}
+
+section{
+    background: linear-gradient(#45E, #49B, #0f0f0f);
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: 90%;
+    max-width: 400px;
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 5px;
+    border: 2px solid rgb(182, 182, 182);
+}
+
+.display{
+    background-color: rgb(182, 182, 182, 0.3);
+    height: 100px;
+    width: 100%;
+    text-align: right;
+    padding: 20px;
+    font-size: 30px;
+    position: relative;
+    border: 0.5px solid rgba(0,0,0,0.4);
+    border-radius: 10px;
+}
+
+.display-1{
+    opacity: 0.4;
+    font-size: 20px;
+    height: 20px;
+    overflow: hidden;
+} 
+
+.temp-result{
+    position: absolute;
+    bottom: 0;
+    left: 10;
+    font-size: 20px;
+    opacity: 0.4;
+}
+
+.all__buttons{
+    color: whitesmoke;
+    display: grid;
+    grid-template: repeat(4, 1fr) / repeat(4, 1fr);
+    padding: 5px;
+}
+
+.button{
+    border: 0.5px solid rgba(0,0,0,0.1);
+    border-radius: 20px;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+.btn-equal{
+    grid-column: 5/3;
+    font-size: 25px;
+}
+
+.button:hover{
+    background: rgb(30,43,46);
+}
+
+.number{
+    font-size: 25px;
+}
+
+.operation{
+    font-size: 27px;
+}
+
