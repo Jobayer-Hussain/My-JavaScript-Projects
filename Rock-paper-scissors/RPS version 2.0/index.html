@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            display: flex;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+        }
+        #container{
+            padding: 50px;
+            background-color: gray;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            border-radius: 20px;
+            border: 10px solid black;
+        }
+
+        #scorePanel{
+            background-color: bisque;
+            width: 400px;
+            padding: 20px;
+            border: 2px solid black;
+            border-radius: 8px;
+        }
+
+
+        button{
+            margin-top: 20px;
+            padding: 10px;
+            color: white;
+            background-color: black;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-left: 20px;
+        }
+
+        button:hover{
+            border: 2px solid black;
+            background-color: peru;
+        }
+
+        span{
+            color: white;
+            font-size: 20px;
+            font-family:cursive;
+        }
+
+        h2{
+            font-family: cursive;
+        }
+       
+    </style>
+</head>
+<body>
+
+    <div id="container">
+        <h2>Let's Play!!</h2>
+        <div id="scorePanel">
+            <h3>Your Choice: <span id="user"></span></h3>
+            <h3>Computer's Choice: <span id="computer"></span></h3>
+            <h3>Result: <span id="result"></span></h3>
+        </div>
+
+        <div class="buttons">
+            <button id="Rock">Rock</button>
+            <button id="Paper">Paper</button>
+            <button id="Scissor">Scissor</button>
+        </div>
+    </div>
+    
+    
+    <script src="/main.js"></script>
+   
+</body>
+</html>
